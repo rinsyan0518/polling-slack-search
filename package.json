@@ -1,0 +1,19 @@
+{
+  "name": "polling-slack-search",
+  "version": "0.0.1",
+  "description": "",
+  "author": "rinsyan0518<rinsyan0518@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@slack/web-api": "^5.6.0",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  },
+  "scripts": {
+    "wait-oauth": "node src/oauth-callback.js",
+    "read-stream": "node src/read-stream.js"
+  }
+}
