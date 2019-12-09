@@ -1,0 +1,10 @@
+version: "3"
+services:
+  node:
+    container_name: node
+    build: .
+    volumes:
+      - ../:/app
+    tty: true
+    ports:
+      - 3000:3000

@@ -42,7 +42,7 @@ app.get("/", async (req, res) => {
 });
 
 const app_install_url = `https://slack.com/oauth/authorize?client_id=${slack_client_id}&scope=search:read`;
-child_process.exec(`open "${app_install_url}"`);
+console.log(`open "${app_install_url}"`);
 
 app.listen(3000, () => {
   console.log("http://localhost:3000 is running");
